@@ -22,11 +22,11 @@ public class BinaryRecursiveSearch implements Practice2Search{
 		}
 		if(arr[mid] < target){
 
-			return search(arr, target, mid-1, min);
+			return search(arr, target,max, mid+1);
 		}
 		else
 
-			return search(arr, target, max, mid+1);
+			return search(arr, target, mid-1, min);
 	}
 
 	public String searchName(){
